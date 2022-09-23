@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+    background: url(https://wallpaper.dog/large/17257243.jpg);
+    background-size: cover;
+}
+.box{
+    width: 300px;
+    padding: 30px;
+    margin: -55px auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+}
+.box h2{
+    color: rgb(230, 205, 205);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 320px;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+ }
+ .popup.active .overlay {
+    display: block;
+ }
+ .popup.active .content {
+    transition: all 300ms ease-in-out ;
+    transform: translate(-50%,-50%) scale(1);
+ }
+ .button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: -25px auto;
+    text-align: center;
+    border: 3px solid orange;
+    padding: 2px 18px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25px;
+    cursor: pointer;
+ }
+ .button:hover {
+    background: rgb(44, 143, 182);
+ }
+ .box input[type="text"], .box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid white;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25px;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+    width: 270px;
+    border-color: yellowgreen;
+}
+.box input[value="Login"] {     
+    border: 0;
+    background: none;
+    display: block;
+    margin: 23px auto;
+    text-align: center;
+    border: 3px solid orange;
+    padding: 14px 30px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover {
+    background: rgb(44, 143, 182);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        h1 {
+            color: rgb(23, 162, 229);
+            padding: 16px 70px;
+            margin: 12px 304px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .pass {
+            color: white;
+        }
+
+        .signup_link {
+            color: white;
+        }
+
+        .link {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Password Management System</h1>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h2>About</h2>
+            <p>This is a Password Manager which can manages and secure all of your passwords for you.</p>
+            <p>Here you can generate strong password and it can also performs store, search and delete operations for
+                your passwords. </p>
+            <p>For demo use "admin" in the username and "admin@123" in the password.</p>
+        </div>
+    </div>
+    <button class="button" onclick="togglePopup()">ABOUT</button>
+    <form class="box" action="index.html" method="POST">
+        <h2>login</h2>
+        <input type="text" name="" placeholder="Enter Username" id="username">
+        <input type="password" name="" placeholder="Enter Password" id="password">
+        <div>
+            <div class="pass">Forget Password?</div>
+                <input type="submit" value="Login" onclick="validate()">
+            <div class="signup_link">
+                Not a member? <a class="link" href="#">SignUp</a>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

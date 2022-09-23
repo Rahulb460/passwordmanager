@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <h1>Password Management System</h1>
+  <div class="container">
+    <div>
+      <button class="button" id="button1">Generate Password</button>
+    </div>
+    <div>
+      <button class="button" id="button2">Save Password</button>
+    </div>
+    <div>
+      <button class="button" id="button3">Search Password</button>
+    </div>
+    <div>
+      <button class="button" id="button4">Delete Password</button>
+    </div>
+  </div>
+
+  <!-- popup for generate password -->
+  <div class="popup">
+    <div class="popup-content">
+      <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357822.jpg"
+        alt="Close" class="close" onclick="closegenerated()">
+      <input type="text" placeholder="Generated password" id="password1" readonly>
+      <table>
+        <th>
+          <div id="button" class="btn1" onclick="genPassword()">Generate</div>
+        </th>
+        <th>
+          <div id="button" class="btn2" onclick="copyPassword()">Copy</div>
+        </th>
+      </table>
+    </div>
+  </div>
+
+  <!-- popup for save password -->
+
+  <div class="popup1">
+    <div class="popup1-content">
+      <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357822.jpg"
+        alt="Close" class="close1">
+      <div>
+        <input type="text" placeholder="Account name" id="text1">
+      </div>
+      <div>
+        <input type="text" placeholder="Account password" id="text2">
+      </div>
+      <th>
+        <div id="btn1" class="btn5" onclick="savePassword()">Save</div>
+      </th>
+    </div>
+  </div>
+
+  <!-- popup for search password -->
+
+  <div class="popup2">
+    <div class="popup2-content">
+      <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357822.jpg"
+        alt="Close" class="close2">
+      <div>
+        <input type="text" class="input1" placeholder="Account name" id="text3">
+      </div>
+      <th>
+        <div id="btn2" class="btn3" onclick="searchPassword()">Search</div>
+      </th>
+    </div>
+  </div>
+  <!-- ghhhjkhikjiljojoi;huihuug -->
+  <div class="popup21">
+    <div class="popup21-content">
+      <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357822.jpg"
+        alt="Close" class="close4">
+      <div>
+        <input type="text" class="input1" placeholder="Your password" id="text4" readonly>
+      </div>
+      <th>
+        <div id="btn4" class="btn4" onclick="search()">Ok</div>
+      </th>
+    </div>
+  </div>
+
+  <!-- popup for delete password -->
+
+  <div class="popup3">
+    <div class="popup3-content">
+      <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357822.jpg"
+        alt="Close" class="close3">
+      <div>
+        <input type="text" class="input1" placeholder="Account name" id="text5">
+      </div>
+      <th>
+        <div id="btn3" class="btn6" onclick="deletePassword()">Delete</div>
+      </th>
+
+    </div>
+  </div>
+
+
+  <script src="script1.js"></script>
+</body>
+
+</html>

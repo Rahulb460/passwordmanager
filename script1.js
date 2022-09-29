@@ -99,3 +99,7 @@ function deletePassword() {
   myMap.delete(str4);
   document.getElementById("text5").value = "";
 }
+
+function logout() {
+  window.location.assign("index.html")
+}
